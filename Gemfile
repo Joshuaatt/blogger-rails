@@ -8,6 +8,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.4'
+gem 'factory_girl'
 
 group :development do
   gem 'byebug'
@@ -27,3 +28,5 @@ end
 group :production do
   gem 'rails_12factor'
 end
+
+ruby '2.1.5'

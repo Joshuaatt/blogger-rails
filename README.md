@@ -9,3 +9,6 @@ Clone repository
 Run ```$ rake db:migrate```
 
 Run ```$ rails s```
+
+Link to app running on Heroku
+http://afternoon-thicket-2656.herokuapp.com/

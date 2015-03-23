@@ -2,6 +2,6 @@ FactoryGirl.define do
   factory(:blog) do
     title('example title')
     body('example body')
-    date('22/22/2222')
+    date('2222/22/22')
   end
 end

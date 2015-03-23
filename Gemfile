@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'factory_girl'
+gem 'devise'
 
 group :development do
   gem 'byebug'
@@ -23,6 +24,7 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'capybara', '~> 2.2.0'
 end
 
 group :production do

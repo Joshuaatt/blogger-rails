@@ -1,0 +1,8 @@
+---
+github:
+  repos: wss://open-connectors.factor.io/v0.4/github_repo
+  issues: wss://open-connectors.factor.io/v0.4/github_issue
+  releases: wss://open-connectors.factor.io/v0.4/github_releases
+heroku: wss://open-connectors.factor.io/v0.4/heroku
+timer: "wss://open-connectors.factor.io/v0.4/timer"
+web: "wss://open-connectors.factor.io/v0.4/web"

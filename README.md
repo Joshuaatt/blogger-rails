@@ -1,4 +1,4 @@
-== Blogger
+## Blogger
 
 This is a rails app demonstrating basic CRUD.
 

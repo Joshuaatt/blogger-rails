@@ -34,13 +34,24 @@ ul {
   list-style-type: none;
 }
 
+.blog-title {
+  font-size: 1.2em;
+  display: block;
+}
+
+.blog-date {
+  margin: 10px;
+  display: block;
+}
+
 .blog-body {
   display: block;
 }
 
 
 .blog-container {
-  margin-top: 70px;
+  margin-top: 35px;
+  padding-bottom: 35px;
   border-bottom: solid 1px #f8f8f8;
   font-size: 1.25em;
 }

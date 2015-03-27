@@ -5,10 +5,10 @@
 <ul>
   <% @blogs.each do |blog| %>
   <div class="blog-container">
-    <li class="categories">
-      <%= link_to blog.title, blog_path(blog) %>
-      <%= blog.date %>
-      <%= blog.body %>
+    <li>
+      <span class="blog-title"><%= link_to blog.title, blog_path(blog) %></span>
+      <span class="blog-date"><%= blog.date %></span>
+      <span class="blog-body"><%= blog.body %></span>
     </li>
   </div>
   <% end %>

@@ -16,6 +16,36 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+body {
+  background: #484859;
+  color: white;
+}
+
 .container {
   width: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #B8B8B8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.blog-body {
+  display: block;
+}
+
+
+.blog-container {
+  margin-top: 70px;
+  border-bottom: solid 1px #f8f8f8;
+  font-size: 1.25em;
+}
+
+.comments {
+  margin-top: 30px;
+  border-bottom: solid 1px #f8f8f8;
 }

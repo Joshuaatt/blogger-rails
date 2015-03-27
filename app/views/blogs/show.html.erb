@@ -1,18 +1,19 @@
 <h1><%= @blog.title %></h1>
 <p><%= @blog.date %></p>
-<p><%= @blog.body %></p>
 
-<p><%= link_to 'Edit', edit_blog_path(@blog) %></p>
-<p><%= link_to 'Delete', blog_path(@blog), data: { confirm: "Are you sure?", method: "delete" } %></p>
-
+<div class="blog-body">
+  <p><%= @blog.body %></p>
+  <p><%= link_to 'edit', edit_blog_path(@blog) %> | <%= link_to 'delete', blog_path(@blog), data: { confirm: "Are you sure?", method: "delete" } %></p>
+</div>
 
 <% if @blog.comments.any? %>
-
+<div>
+  <ul>
   <% @blog.comments.each do |comment| %>
-    <p><%= comment.comment_body %></p>
-    <p><%= link_to 'Edit comment', edit_blog_comment_path(@blog, comment) %></p>
-    <p><%= link_to 'Delete comment', blog_comment_path(@blog, comment), data: { confirm: "Are you sure?", method: "delete" } %></p>
+    <li class="comments"><%= comment.comment_body %> <%= link_to 'edit', edit_blog_comment_path(@blog, comment) %> | <%= link_to 'delete comment', blog_comment_path(@blog, comment), data: { confirm: "Are you sure?", method: "delete" } %></li>
   <% end %>
+  </ul>
+</div>
 <% end %>
 
 <p><%= link_to 'Add comment', new_blog_comment_path(@blog, @comment) %>

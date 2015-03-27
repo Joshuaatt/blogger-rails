@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  before_action :authenticate_user!, { only: [:create, :edit, :update, :destroy]}
 
   def new
     @blog = Blog.find(params[:blog_id])

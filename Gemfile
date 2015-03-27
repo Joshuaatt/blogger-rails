@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'factory_girl'
 gem 'devise'
+gem 'bootstrap_form'
 
 group :development do
   gem 'byebug'

@@ -1,12 +1,16 @@
-<h1>Blogs</h1>
+<div class="page-header">
+  <h1>Blogs</h1>
+</div>
 
 <ul>
   <% @blogs.each do |blog| %>
-    <li>
+  <div class="blog-container">
+    <li class="categories">
       <%= link_to blog.title, blog_path(blog) %>
       <%= blog.date %>
       <%= blog.body %>
     </li>
+  </div>
   <% end %>
 </ul>
 
